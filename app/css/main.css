@@ -1,0 +1,58 @@
+body {
+    background: url('/img/Background.jpg') center;
+    background-size: cover;
+}
+
+.routes-table {
+    background-color: white;
+}
+
+.routes-table thead {
+    background-color: #e7e7e7;
+}
+
+.routes-table tbody tr{
+    cursor: pointer;
+}
+
+.routes-table td:last-child,
+.routes-table th:last-child{
+    border-left: none;
+}
+
+.routes-table td:nth-child(2),
+.routes-table th:nth-child(2){
+    border-right: none;
+}
+
+.routes-table td:last-child{
+    background: url('/img/remove-icon.png') no-repeat center;
+    background-size: 20px;
+    width: 50px;
+}
+
+.routes-table tbody {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.route {
+    width: 45%;
+    float: left;
+    margin-bottom: 15px !important;
+}
+
+.route input {
+    width: 80% !important;
+}
+
+.btn-route {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.map-frame {
+    border: 0;
+    width: 100%;
+    height: 550px;
+}

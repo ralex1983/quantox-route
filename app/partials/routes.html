@@ -1,0 +1,27 @@
+<div class="form-inline">
+    <div class="form-group route">
+        <label for="startPoint">Start Point:</label>
+        <input type="text" class="form-control" ng-model="route.startPoint">
+    </div>
+    <div class="form-group route">
+        <label for="endPoint">End Point:</label>
+        <input type="text" class="form-control" ng-model="route.endPoint">
+    </div>
+    <button class="btn btn-default btn-route" ng-click="routeDetails()">Route Details</button>
+</div>
+<table class="table table-bordered table-striped routes-table" ng-show="routes.length > 0">
+    <thead>
+        <tr>
+            <th>Start Point</th>
+            <th>End Point</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="nRoute in routes" ng-click="getRoute($index)">
+            <td>{{nRoute.startPoint}}</td>
+            <td>{{nRoute.endPoint}}</td>
+            <td ng-click="removeRoute($index)" title="Remove Route"></td>
+        </tr>
+    </tbody>
+</table>
