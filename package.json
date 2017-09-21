@@ -23,7 +23,8 @@
     "gulp-connect": "^5.0.0",
     "gulp-jshint": "^2.0.4",
     "gulp-minify-css": "^1.2.4",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.0"
   },
   "devDependencies": {
     "gulp-jshint": "^2.0.4",
